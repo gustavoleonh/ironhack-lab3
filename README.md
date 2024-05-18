@@ -3,6 +3,7 @@
 ### Analisys report:
 
 ###### **Scenario 1: User Authentication Tests**
+
 <br>
 
 ```
@@ -12,13 +13,16 @@ TEST UserAuthentication
 END TEST
 ```
 <br>
+
 ***Issues:***
 
 * Is testing more than one use case in the same test, test should be splited in at least two.
 * Test name is not descriptive.
 
 ***Revised test case(s):***
+
 <br>
+
 ```
 // Setup and Teardown logic
 SETUP
@@ -61,7 +65,9 @@ TEST AuthenticateWithNullCredentials
 END TEST
 ```
 <br>
+
 ###### **Scenario 2: Data Processing Functions**
+
 <br>
 
 ```
@@ -75,7 +81,9 @@ TEST DataProcessing
   END TRY
 END TEST
 ```
+
 <br>
+
 ***Issues:***
 
 * Name is not descriptive.
@@ -84,8 +92,11 @@ END TEST
 * Test auxiliary functions should have clear names.
 
 <br>
+
 ***Revised test case(s):***
+
 <br>
+
 ```
 // Setup and Teardown logic
 SETUP
@@ -137,16 +148,22 @@ TEST ProcessEmptyData
     ASSERT_EQUALS("Empty data error", error.message, "Should handle empty data processing errors")
 END TEST
 ```
+
 <br>
+
 ###### **Scenario 3: UI Responsiveness**
+
 <br>
+
 ```
 TEST UIResponsiveness
   UI_COMPONENT uiComponent = setupUIComponent(1024)
   ASSERT_TRUE(uiComponent.adjustsToScreenSize(1024), "UI should adjust to width of 1024 pixels")
 END TEST
 ```
+
 <br>
+
 ***Issues:***
 
 * Name is not descriptive.
@@ -154,8 +171,11 @@ END TEST
 * Configuration funcionos when possible should be defined globally for all test.
 
 <br>
+
 ***Revised test case(s):***
+
 <br>
+
 ```
 // Setup and Teardown logic
 SETUP
