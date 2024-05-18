@@ -4,6 +4,7 @@
 
 ###### **Scenario 1: User Authentication Tests**
 <br>
+
 ```
 TEST UserAuthentication
   ASSERT_TRUE(authenticate("validUser", "validPass"), "Should succeed with correct credentials")
@@ -62,6 +63,7 @@ END TEST
 <br>
 ###### **Scenario 2: Data Processing Functions**
 <br>
+
 ```
 TEST DataProcessing
   DATA data = fetchData()
